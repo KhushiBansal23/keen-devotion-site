@@ -2382,56 +2382,86 @@
   }
 </style>
   <style id="white-entry-screen">
+  /*
+    Private-entry treatment:
+    warm pearl + restrained Keen Devotion accents
+  */
+
   body.no-scroll {
-    background: #F3F2EF;
+    background: #FBF3EE;
   }
 
   .entry {
-    background: #F3F2EF;
+    background: #FBF3EE;
   }
 
   .entry::before {
     background:
       radial-gradient(
-        ellipse 70% 60% at 50% 46%,
-        rgba(20, 20, 20, 0.045) 0%,
-        transparent 70%
+        circle at 14% 12%,
+        rgba(76, 16, 65, 0.09),
+        transparent 35%
+      ),
+      radial-gradient(
+        circle at 87% 86%,
+        rgba(217, 87, 36, 0.09),
+        transparent 33%
+      ),
+      linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.34),
+        transparent 58%
       );
   }
 
   .entry-card {
-    background: #FFFFFF;
-    border-color: rgba(24, 24, 22, 0.12);
+    background: rgba(255, 249, 245, 0.94);
+    border-color: rgba(54, 10, 47, 0.14);
     box-shadow:
-      0 32px 100px rgba(24, 24, 22, 0.11),
+      0 30px 90px rgba(53, 12, 45, 0.12),
       inset 0 1px 0 rgba(255, 255, 255, 0.92);
   }
 
   .entry-kicker {
-    color: #74736F;
+    color: rgba(38, 6, 41, 0.58);
   }
 
   .entry-line {
-    color: #191918;
+    color: #2A0A27;
   }
 
   .entry-btn {
-    color: #191918;
-    border-color: rgba(25, 25, 24, 0.48);
+    color: #260629;
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(38, 6, 41, 0.42);
   }
 
   .entry-btn:hover {
-    background: #191918;
-    border-color: #191918;
-    color: #FFFFFF;
+    color: #FFF8F3;
+    background: #260629;
+    border-color: #260629;
   }
 
   .entry-btn:focus-visible {
-    outline-color: #191918;
+    outline-color: #260629;
+  }
+
+  /*
+    Keeps the transition visible against the light screen:
+    plum provides structure; orange supplies the first warm reveal.
+  */
+  .entry-spiral span {
+    border-color: rgba(38, 6, 41, 0.24);
+    border-left-color: transparent;
+    border-top-color: rgba(217, 87, 36, 0.78);
+    border-bottom-color: rgba(255, 126, 65, 0.34);
+    box-shadow:
+      0 0 28px rgba(217, 87, 36, 0.16),
+      inset 0 0 22px rgba(38, 6, 41, 0.045);
   }
 
   .entry-toggle:checked + .entry {
-    background: #F3F2EF;
+    background: #FBF3EE;
   }
 </style>
 </head>
