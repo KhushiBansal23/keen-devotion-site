@@ -2381,6 +2381,59 @@
     .wl2 { left: 96%; } .wl5 { left: 4%; }
   }
 </style>
+  <style id="white-entry-screen">
+  body.no-scroll {
+    background: #F3F2EF;
+  }
+
+  .entry {
+    background: #F3F2EF;
+  }
+
+  .entry::before {
+    background:
+      radial-gradient(
+        ellipse 70% 60% at 50% 46%,
+        rgba(20, 20, 20, 0.045) 0%,
+        transparent 70%
+      );
+  }
+
+  .entry-card {
+    background: #FFFFFF;
+    border-color: rgba(24, 24, 22, 0.12);
+    box-shadow:
+      0 32px 100px rgba(24, 24, 22, 0.11),
+      inset 0 1px 0 rgba(255, 255, 255, 0.92);
+  }
+
+  .entry-kicker {
+    color: #74736F;
+  }
+
+  .entry-line {
+    color: #191918;
+  }
+
+  .entry-btn {
+    color: #191918;
+    border-color: rgba(25, 25, 24, 0.48);
+  }
+
+  .entry-btn:hover {
+    background: #191918;
+    border-color: #191918;
+    color: #FFFFFF;
+  }
+
+  .entry-btn:focus-visible {
+    outline-color: #191918;
+  }
+
+  .entry-toggle:checked + .entry {
+    background: #F3F2EF;
+  }
+</style>
 </head>
 <body class="no-scroll gated">
 
